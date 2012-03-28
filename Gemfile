@@ -13,10 +13,7 @@ end
 # Usamos sqlite3 en Desarrollo y Testing
 group :development, :test do
 	gem 'sqlite3'
-<<<<<<< HEAD
-=======
 	gem 'mysql2'
->>>>>>> ee1786f306f2c3a3cec47608dce21a2a130fe8b3
 end
 
 # gem 'mysql2'
