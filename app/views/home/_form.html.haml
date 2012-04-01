@@ -1,0 +1,8 @@
+= simple_form_for(@contact) do |f|
+	= f.error_notification
+	.inputs
+		= f.input :mail, :placeholder=>"mail",:label=>false
+		= f.input :name, :placeholder=>"name", :label=>false
+		= f.text_area :comment, :placeholder=>"comment",:rows=>8, :cols=>35, :label=>false		
+	.actions
+		= f.button :submit
