@@ -219,14 +219,63 @@ footer
 		margin-left: 5%
 		li
 			margin-bottom: 9%
+			-webkit-transition: -webkit-transform 0.2s ease-in-out
+			-moz-transition: -moz-transform 0.2s ease-in-out
+			-o-transition: -o-transform 0.2s ease-in-out
+			transition: transform 0.2s ease-in-out
+		li:hover	
+			-webkit-transform: scale(1.05)
+			-moz-transform: scale(1.05)
+			-o-transform: scale(1.05)
+			-ms-transform: scale(1.05)
+			transform: scale(1.05)
 
 aside.contact_form
+	-moz-box-shadow: 0px 2px 9px #737373
+	-webkit-box-shadow: 0px 2px 9px #737373
+	box-shadow: 0px 2px 9px #737373
+	-moz-border-radius: 3px
+	-webkit-border-radius: 3px
+	border-radius: 3px	
+	::-webkit-input-placeholder
+		color: white
+	input:-moz-placeholder
+		color: white
 	float: left
 	background: white
 	.inputs 		
-		margin: 6px
+		margin: 18px
+		font-size: 1.2em
 		.input
 			margin-bottom: 6px
 		input
-			width: 185px
+			padding: 2px
+			width: 187px
 			height: 26px
+			-webkit-border-radius: 4px
+			-moz-border-radius: 4px
+			border-radius: 4px
+			background: #C6C6C6
+		textarea
+			padding: 2px
+			-moz-border-radius: 4px
+			border-radius: 4px
+			background: #C6C6C6
+			border: gray
+	.actions
+		float: right
+		.button
+			border: none
+			color: #aeaeae
+			-moz-border-radius: 7px
+			-webkit-border-radius: 7px
+			border-radius: 7px
+			font-size: 13px
+			padding: 8px 12px
+			cursor: pointer
+			margin-right: 6px
+			background: #f6f6f6
+			-moz-box-shadow: 0px 2px 9px #737373
+			-webkit-box-shadow: 0px 2px 9px #737373
+			box-shadow: 0px 2px 9px #737373
+			margin-bottom: 10px
