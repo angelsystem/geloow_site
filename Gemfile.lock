@@ -58,15 +58,11 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.18)
-<<<<<<< HEAD
     multi_json (1.1.0)
-    pg (0.13.2)
-    pg (0.13.2-x86-mingw32)
-=======
     multi_json (1.2.0)
     mysql2 (0.3.11)
     pg (0.13.2)
->>>>>>> ee1786f306f2c3a3cec47608dce21a2a130fe8b3
+    pg (0.13.2-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -125,10 +121,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   haml-rails
   jquery-rails
-<<<<<<< HEAD
-=======
   mysql2
->>>>>>> ee1786f306f2c3a3cec47608dce21a2a130fe8b3
   pg
   rails (= 3.2.2)
   sass

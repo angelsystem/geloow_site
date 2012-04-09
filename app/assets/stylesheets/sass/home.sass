@@ -27,18 +27,46 @@ section
 	width: 100%
 	display: block
 	padding: 0
+	&.home
+		position: relative
+		top: 72px
+		height: 1000px
+	&.what, &.contact
+		height: 1400px
+		padding: 100px 0 0 0
+		margin: 0	
+	&.contact
+		text-align: center
+		.content
+			width: 60%
+			margin: 0 auto		
+		p			
+			font-size: 1.5em
+			line-height: 1.7em
+			text-align: justify
+		ol
+			width: 70%
+			margin: 0 auto
+			display: inline-block
+			li
+				margin-left: 5%
+				margin-right: 5%
+				float: left
+				font-size: 1.3em
+				color: #37425d
+		form
+			border: 1px solid red
+			height: 200px
+			ol.first
+				li
+					float: left		
 
-section.home
-	position: relative
-	top: 72px
-	height: 1000px
 
-section.what	
-	height: 1400px
-	padding: 100px 0 0 0
-	margin: 0
+	h1, p 
+		color: #37425d
 
-.content	
+
+.content
 	width: 88%
 	margin: 0 auto
 	.logo
@@ -97,7 +125,9 @@ footer
 .container
 	width: 33%
 	height: 170px
+	border: 1px solid red
 	-webkit-perspective: 1000
+
 
 .clear
 	clear: both	
@@ -125,17 +155,21 @@ footer
 	-moz-box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
 	box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
 
+.container:hover .front
+	z-index: 0
 .container
 	float: left	
 	top: 30px
-	left: 20px	
+	left: 20px		
 	.back
 		width: 99%				
 		margin: 1%
 		border: 1px solid #50607b
 		background: white
 		-webkit-border-radius: 3px
-		-webkit-transform: rotateY(180deg)		
+		-webkit-transform: rotateY(180deg)
+		-moz-border-radius: 3px		
+		border-radius: 3px		
 		.title
 			-moz-border-radius: 2px
 			-webkit-border-radius: 2px
@@ -168,6 +202,7 @@ footer
 	margin: 7%		
 	-webkit-transform-style: preserve-3d
 	-webkit-transition: 0.5s		
+	
 
 .dev_card
 	background: url(../development.png) no-repeat
@@ -193,9 +228,7 @@ footer
 	margin-top: 10%	
 	margin-bottom: 10%
 
-.description 
-	h1
-		color: #37425d
+.description 	
 	p
 		color: #858585
 		font-size: 1.4em

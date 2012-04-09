@@ -8,7 +8,10 @@
 		%meta{ name: 'keywords', content: "#{t(:head__keywords)}" }
 		%link{ href: '/images/favicon.ico', rel: 'shortcut icon', type: 'image/x-icon' }
 		%title SendDinero.com
-		= stylesheet_link_tag "sass/home", media: 'screen', type: 'text/css'    			
+		= stylesheet_link_tag "sass/home", media: 'screen', type: 'text/css'					
+		= javascript_include_tag 'http://www.culturalsolutions.co.uk/js/jquery.js'
+		= javascript_include_tag 'http://www.culturalsolutions.co.uk/js/jquery.jparallax.min.js'
+		= javascript_include_tag 'http://www.culturalsolutions.co.uk/js/jquery.delay.js'
 		= yield(:head)
 		= csrf_meta_tag	    
 	%body
