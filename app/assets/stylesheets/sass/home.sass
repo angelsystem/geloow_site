@@ -18,65 +18,14 @@ body
 		text-decoration: none
 		color: #45506a
 
+.clear
+	clear: both	
+
 header
 	display: block
 	margin-bottom: 3em
 	padding: 0
 
-section
-	width: 100%
-	display: block
-	padding: 0
-	&.home
-		position: relative
-		top: 72px
-		height: 1000px
-	&.what, &.contact
-		height: 1400px
-		padding: 100px 0 0 0
-		margin: 0	
-	&.contact
-		text-align: center
-		.content
-			width: 60%
-			margin: 0 auto		
-		p			
-			font-size: 1.5em
-			line-height: 1.7em
-			text-align: justify
-		ol
-			width: 70%
-			margin: 0 auto
-			display: inline-block
-			li
-				margin-left: 5%
-				margin-right: 5%
-				float: left
-				font-size: 1.3em
-				color: #37425d
-		form
-			border: 1px solid red
-			height: 200px
-			ol.first
-				li
-					float: left		
-
-
-	h1, p 
-		color: #37425d
-
-
-.content
-	width: 88%
-	margin: 0 auto
-	.logo
-		background-image: url(../logo.png)
-		background-repeat: no-repeat
-		width: 169px
-		height: 169px
-		margin: 0 auto
-
-//header
 .header
 	background: url(../header_bg.png)
 	position: fixed
@@ -94,174 +43,230 @@ nav
 		float: left
 		margin: 0 3.3em
 
-
-h1
-	color: red	
-
-.social
-	text-align: center
-	background: url(../sociales.png) no-repeat
-	width: 185px
-	height: 20px
-	margin: 20px auto
-
-
-.slogan
-	text-align: center
-	color: #37425d
-	font-size: 3.5em
-
 footer
 	height: 35px
 	background: url(../footer.png) repeat-x	
 
 
 
-.skill
-	width: 50%
-	margin: 0 auto
-	padding-bottom: 5%
+section
+	width: 100%
+	display: block
+	padding: 0
 
-.container
-	width: 33%
-	height: 170px
-	border: 1px solid red
-	-webkit-perspective: 1000
-
-
-.clear
-	clear: both	
-
-
-.container:hover .card
-	-webkit-transform: rotateY(180deg)	
-
-.face
-	position: absolute
-	-webkit-backface-visibility: hidden
-
-.front
-	z-index: 10	
-	width: 86%	
-	text-align: center	
-	margin: 7%
-
-
-.container:hover .front
-	z-index: 0
-
-.design	
-	-webkit-box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
-	-moz-box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
-	box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
-
-.container:hover .front
-	z-index: 0
-.container
-	float: left	
-	top: 30px
-	left: 20px		
-	.back
-		width: 99%				
-		margin: 1%
-		border: 1px solid #50607b
-		background: white
-		-webkit-border-radius: 3px
-		-webkit-transform: rotateY(180deg)
-		-moz-border-radius: 3px		
-		border-radius: 3px		
-		.title
-			-moz-border-radius: 2px
-			-webkit-border-radius: 2px
-			border-radius: 3px
-			border: 1px solid #3f475b
-			background: #50607b
+	h1, p 
+		color: #37425d
+	.content
+		width: 88%
+		margin: 0 auto		
+			
+	&.home
+		position: relative
+		top: 72px
+		height: 1000px		
+		.logo
+			background: url(../logo.png) no-repeat			
+			width: 169px
+			height: 169px
+			margin: 0 auto
+		.social
 			text-align: center
-			color: white
-			margin: 1em
-			padding: 0.5em
-			font-size: 1.3em
-			font-weight: bold
-		.content_cat	
-			color: #475373
-			margin: 1em
+			background: url(../sociales.png) no-repeat
+			width: 185px
+			height: 20px
+			margin: 20px auto
+		.slogan
 			text-align: center
-			font-size: 1.2em
+			color: #37425d
+			font-size: 3.5em	
 
-	img
-		float: right				
-	.text		
-		width: 100%
-		margin: 0 0 20px 0
-		font-size: 17px
-		line-height: 28px
-		color: #4c4c4c		
+		.skill
+			width: 50%
+			margin: 0 auto
+			padding-bottom: 5%
 
-.card
-	width: 86%
-	margin: 7%		
-	-webkit-transform-style: preserve-3d
-	-webkit-transition: 0.5s		
+		.container
+			width: 33%
+			height: 170px
+			float: left	
+			top: 30px
+			left: 20px
+			-webkit-perspective: 1000
+			&:hover 
+				.card
+					-webkit-transform: rotateY(180deg)
+				.front
+					z-index: 0	
+			
+			.face
+				position: absolute
+				-webkit-backface-visibility: hidden
+
+			.front
+				z-index: 10	
+				width: 86%	
+				text-align: center	
+				margin: 7%
+				.text	
+					width: 100%
+					margin: 0 0 20px 0
+					font-size: 17px
+					line-height: 28px
+					color: #4c4c4c
+				.image
+					width: 70px
+					height: 70px
+					margin: 10% auto				
+				.dev_card
+					background: url(../development.png) no-repeat					
+
+				.des_card
+					background: url(../design.png) no-repeat					
+
+				.mob_card
+					background: url(../mobile.png) no-repeat
+					
+			.card
+				width: 86%
+				margin: 7%		
+				-webkit-transform-style: preserve-3d
+				-webkit-transition: 0.5s
+				
+			.back
+				width: 99%				
+				margin: 1%
+				border: 1px solid #50607b
+				background: white
+				-webkit-border-radius: 3px
+				-webkit-transform: rotateY(180deg)
+				-moz-border-radius: 3px		
+				border-radius: 3px		
+				.title
+					-moz-border-radius: 2px
+					-webkit-border-radius: 2px
+					border-radius: 3px
+					border: 1px solid #3f475b
+					background: #50607b
+					text-align: center
+					color: white
+					margin: 1em
+					padding: 0.5em
+					font-size: 1.3em
+					font-weight: bold
+				.content_cat	
+					color: #475373
+					margin: 1em
+					text-align: center
+					font-size: 1.2em
 	
 
-.dev_card
-	background: url(../development.png) no-repeat
-	width: 70px
-	height: 70px
-	margin: 0 auto
-	margin-top: 10%
-	margin-bottom: 10%
+			&.design
+				-webkit-box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
+				-moz-box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
+				box-shadow: inset 5px 0 5px -5px #333, inset -5px 0 5px -5px #333
 
-.des_card
-	background: url(../design.png) no-repeat
-	width: 70px
-	height: 70px
-	margin: 0 auto
-	margin-top: 10%
-	margin-bottom: 10%
+							
+				img
+					float: right								
+	
+	&.what
+		.description
+			p
+				color: #858585
+				font-size: 1.4em
+		.icon_s
+			width: 80px
+			height: 80px
+			float: left
+			margin-right: 40px
+		.icon_dev
+			background: url(../w_icon_dev.png) no-repeat
+		.icon_des
+			background: url(../w_icon_des.png) no-repeat
+		.icon_mob
+			background: url(../w_icon_mobile.png) no-repeat
+		article
+			float: left	
+			width: 70%
+			margin-left: 5%
+			li
+				margin-bottom: 9%
+				-webkit-transition: -webkit-transform 0.2s ease-in-out
+				-moz-transition: -moz-transform 0.2s ease-in-out
+				-o-transition: -o-transform 0.2s ease-in-out
+				transition: transform 0.2s ease-in-out
+			li:hover	
+				-webkit-transform: scale(1.05)
+				-moz-transform: scale(1.05)
+				-o-transform: scale(1.05)
+				-ms-transform: scale(1.05)
+				transform: scale(1.05)		
+	&.what, &.contact
+		height: 1400px
+		padding: 100px 0 0 0
+		margin: 0	
 
-.mob_card
-	background: url(../mobile.png) no-repeat
-	width: 70px
-	height: 70px	
-	margin: 0 auto
-	margin-top: 10%	
-	margin-bottom: 10%
 
-.description 	
-	p
-		color: #858585
-		font-size: 1.4em
+	&.contact
+		text-align: center
+		.content
+			width: 60%
+			margin: 0 auto		
+		p			
+			font-size: 1.5em
+			line-height: 1.7em
+			text-align: justify
+		ol.social
+			width: 70%
+			margin: 0 auto
+			display: inline-block
+			margin-bottom: 3em
+			li
+				margin: 0 5%				
+				float: left
+				font-size: 1.3em
+				color: #37425d
+		form			
+			height: 200px
+			text-align: left
+			font-size: 1.3em
+			width: 96%
+			margin: 0 auto
+			ol
+				margin: 0px
+				padding: 0px
+				&.first				
+					li
+						margin-right: 3.3em
+						float: left						
+			input				
+				padding: 7px 7px 7px 25px
+				background-repeat: no-repeat
+				margin-bottom: 1.5em
+				&#contact_name
+					background-image: url(../user_input.png)
+				&#contact_mail
+					background-image: url(../mail_input.png)
+				&#contact_phone
+					background-image: url(../tele_input.png)				
+			textarea
+				padding: 7px 7px 7px 25px
+				background-repeat: no-repeat
+				width: 94%
+				&#contact_comment
+					background-image: url(../comment_input.png)
+			.actions
+				float: right
+				.button					
+					color: #AEAEAE					
+					font-size: 1em
+					padding: 10px 25px
+					cursor: pointer
+					margin-right: 6px
+					background: #F6F6F6				
+					margin-top: 20px
+					border: 1px solid #AEAEAE
 
-//What
-.what
-	.icon_s
-		width: 80px
-		height: 80px
-		float: left
-		margin-right: 40px
-	.icon_dev
-		background: url(../w_icon_dev.png) no-repeat
-	.icon_des
-		background: url(../w_icon_des.png) no-repeat
-	.icon_mob
-		background: url(../w_icon_mobile.png) no-repeat
-	article
-		float: left	
-		width: 70%
-		margin-left: 5%
-		li
-			margin-bottom: 9%
-			-webkit-transition: -webkit-transform 0.2s ease-in-out
-			-moz-transition: -moz-transform 0.2s ease-in-out
-			-o-transition: -o-transform 0.2s ease-in-out
-			transition: transform 0.2s ease-in-out
-		li:hover	
-			-webkit-transform: scale(1.05)
-			-moz-transform: scale(1.05)
-			-o-transform: scale(1.05)
-			-ms-transform: scale(1.05)
-			transform: scale(1.05)
 
 aside.contact_form
 	-moz-box-shadow: 0px 2px 9px #737373
@@ -272,8 +277,12 @@ aside.contact_form
 	border-radius: 3px	
 	::-webkit-input-placeholder
 		color: white
+	::-webkit-textarea-placeholder
+		color: white	
 	input:-moz-placeholder
 		color: white
+	textarea:-moz-placeholder
+		color: white	
 	float: left
 	background: white
 	.inputs 		
@@ -295,6 +304,7 @@ aside.contact_form
 			border-radius: 4px
 			background: #C6C6C6
 			border: gray
+			width: 190px
 	.actions
 		float: right
 		.button
@@ -306,7 +316,7 @@ aside.contact_form
 			font-size: 13px
 			padding: 8px 12px
 			cursor: pointer
-			margin-right: 6px
+			margin-right: 20px
 			background: #f6f6f6
 			-moz-box-shadow: 0px 2px 9px #737373
 			-webkit-box-shadow: 0px 2px 9px #737373

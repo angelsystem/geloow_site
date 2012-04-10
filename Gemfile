@@ -20,6 +20,7 @@ end
 gem 'haml-rails'
 gem 'sass'
 gem "simple_form"
+gem 'bourbon'
 
 
 # Gems used only for assets and not required
