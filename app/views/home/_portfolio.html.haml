@@ -1,0 +1,102 @@
+%section#wrapper.portafolio
+	#portfolio
+		.portfolio Portfolio
+
+	%ul#main_navi
+		%li.active 1
+		%li.subtitulo-project 2
+		%li.subtitulo-project 3
+		%li.subtitulo-project 4
+		%li.subtitulo-project 5
+		%li.subtitulo-project 6
+
+	#main
+		#pages{:style=>"top: 0px"}
+			.page 
+				.navi
+					=link_to "","#0", :class=>"active"
+					=link_to "","#1"
+					=link_to "","#2"
+
+				.scrollable
+					.items{:style=>"left: -910px"}
+						.item.cloned								
+							= link_to(image_tag("http://enfanterrible.es/ima/RUSCA/about.jpg",:alt=>"Rusca | Enfant Terrible", :title=>"Rusca | Enfant Terrible"), "http://www.rusca.me")	
+							.titulo-project
+								=link_to "Rusca","http://www.rusca.me", :target=>"_blank"		
+								%br
+							%span{:class=>"subtitulo-project"} 
+								CMS Web
+						.item
+							=link_to(image_tag("http://enfanterrible.es/ima/RUSCA/home.jpg"),"http://www.rusca.me" ,:target=>"_blank")
+							.titulo-project
+								=link_to "Rusca","http://www.rusca.me", :target=>"_blank"
+								%br
+								%span{:class=>"subtitulo-project"} CMS Web
+						.item
+							=link_to(image_tag("http://enfanterrible.es/ima/RUSCA/projects.jpg"),"http://www.rusca.me" ,:target=>"_blank")
+							.titulo-project
+								=link_to "Rusca","http://www.rusca.me", :target=>"_blank"
+								%br
+								%span{:class=>"subtitulo-project"} CMS Web
+
+						.item.cloned
+							=link_to(image_tag("http://enfanterrible.es/ima/RUSCA/home.jpg"),"http://www.rusca.me" ,:target=>"_blank")
+							.titulo-project
+								=link_to "Rusca","http://www.rusca.me",:target=>"_blank"
+								%br
+							%span{:class=>"subtitulo-project"} CMS Web
+			.page		          
+				.navi
+					=link_to "#0", :class=>"active"
+					=link_to "#1"
+					=link_to "#2"
+				.scrollable		            
+					.items{:style=>"left: -910px"}
+						.item.cloned
+							=image_tag("http://enfanterrible.es/ima/ALOUD/radio.jpg",:title=>"Aloud Music Ltd. | Enfant Terrible")
+							.titulo-project
+								Aloud Music Ltd.
+								%br
+								%span.subtitulo-project Web
+
+						.item
+							=image_tag("http://enfanterrible.es/ima/ALOUD/radio.jpg",:title=>"Aloud Music Ltd. | Enfant Terrible")
+							.titulo-project
+								Aloud Music Ltd.
+								%br
+								%span.subtitulo-project Web
+
+						.item.cloned
+							=image_tag("http://enfanterrible.es/ima/ALOUD/radio.jpg",:title=>"Aloud Music Ltd. | Enfant Terrible")
+							.titulo-project
+								Aloud Music Ltd.
+								%br
+								%span.subtitulo-project Web
+			.page		          
+				.navi
+					=link_to "#0", :class=>"active"
+					=link_to "#1"
+					=link_to "#2"
+				.scrollable		            
+					.items{:style=>"left: -910px"}
+						.item.cloned
+							=image_tag("http://enfanterrible.es/ima/ALOUD/radio.jpg",:title=>"Aloud Music Ltd. | Enfant Terrible")
+							.titulo-project
+								Aloud Music Ltd.
+								%br
+								%span.subtitulo-project Web
+
+						.item
+							=image_tag("http://enfanterrible.es/ima/ALOUD/radio.jpg",:title=>"Aloud Music Ltd. | Enfant Terrible")
+							.titulo-project
+								Aloud Music Ltd.
+								%br
+								%span.subtitulo-project Web
+
+						.item.cloned
+							=image_tag("http://enfanterrible.es/ima/ALOUD/radio.jpg",:title=>"Aloud Music Ltd. | Enfant Terrible")
+							.titulo-project
+								Aloud Music Ltd.
+								%br
+								%span.subtitulo-project Web
