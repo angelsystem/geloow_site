@@ -55,6 +55,14 @@ footer
 	background: url(../footer.png) repeat-x	
 
 
+#container
+	position: relative
+	margin: 0 auto
+	width: 860px
+	padding: 0 10px 0 250px
+
+.content
+	
 
 section
 	width: 100%
@@ -66,10 +74,7 @@ section
 		font-family: kreon, serif				
 		line-height: 38px				
 		text-shadow: 1px 1px 1px white
-		font-weight: 200
-	.content
-		width: 88%
-		margin: 0 auto		
+		font-weight: 200		
 			
 	&.home
 		position: relative
@@ -196,9 +201,8 @@ section
 			background: url(../w_icon_des.png) no-repeat
 		.icon_mob
 			background: url(../w_icon_mobile.png) no-repeat
-		article
-			float: left	
-			width: 70%
+		article			
+			width: 100%
 			margin-left: 5%
 			li
 				margin-bottom: 9%
@@ -219,10 +223,7 @@ section
 
 
 	&.contact
-		text-align: center
-		.content
-			width: 60%
-			margin: 0 auto		
+		text-align: center		
 		p			
 			font-size: 1.5em
 			line-height: 1.7em
@@ -254,6 +255,7 @@ section
 				padding: 7px 7px 7px 25px
 				background-repeat: no-repeat
 				margin-bottom: 1.5em
+				background-position: 5px
 				&#contact_name
 					background-image: url(../user_input.png)
 				&#contact_mail
@@ -261,10 +263,11 @@ section
 				&#contact_phone
 					background-image: url(../tele_input.png)				
 			textarea
-				padding: 7px 7px 7px 25px
-				background-repeat: no-repeat
+				padding: 7px 7px 7px 27px
+				background-repeat: no-repeat				
 				width: 94%
 				&#contact_comment
+					background-position: 2px 7px
 					background-image: url(../comment_input.png)
 			.actions
 				float: right
@@ -280,6 +283,9 @@ section
 
 
 aside.contact_form
+	position: absolute
+	left: 10px
+	top: 100px
 	-moz-box-shadow: 0px 2px 9px #737373
 	-webkit-box-shadow: 0px 2px 9px #737373
 	box-shadow: 0px 2px 9px #737373
@@ -423,7 +429,7 @@ a
 	text-shadow: 1px 1px 1px white
 	color: #666
 
-#main
+#main_section
 	position: relative
 	overflow: hidden
 	height: 600px
@@ -446,3 +452,22 @@ a
 #pages
 	position: absolute
 	height: 20000em
+
+
+
+.pageScroll.left
+	margin-left: -680px
+
+.pageScroll
+	position: fixed !important
+	top: 50%
+	left: 50%
+	margin-top: -250px
+	width: 167px
+	border: 7px solid white
+	-webkit-border-radius: 15px
+	-moz-border-radius: 15px
+	border-radius: 15px
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3)
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3)
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3)

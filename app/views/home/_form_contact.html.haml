@@ -2,14 +2,14 @@
 	= f.error_notification
 	.inputs
 		%ol.first
-			%li 	
-				= f.input :name, :placeholder=>"name", :label=>false,:input_html=>{:size=>40}
+			%li
+				= f.input :name, :placeholder=>"name", :label=>false,:input_html=>{:size=>40,:title=>"Es requerido el campo nombre"}
 			%li 
-				= f.input :mail, :placeholder=>"mail",:label=>false,:input_html=>{:size=>40}
+				= f.input :mail, :placeholder=>"mail",:label=>false,:input_html=>{:size=>40,:title=>"Es requerido el campo nombre"}
 		%ol.second
-			%li		
+			%li
 				= f.input :phone, :placeholder=>"telephone", :label=>false, :input_html=>{:size=>40}
 			%li	
-				= f.text_area :comment, :placeholder=>"comment",:rows=>8, :cols=>81, :label=>false		
+				= f.text_area :comment, :placeholder=>"comment",:rows=>8, :cols=>81, :label=>false
 	.actions
 		= f.button :submit, :value=>"Enviar"
