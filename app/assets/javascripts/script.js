@@ -2,7 +2,7 @@ $(document).ready(function(){
 		
 		// instantiate page scroller plugin		
 		
-		var navLabel = new Array('Inicio', 'Que hacemos', "Como Trabajamos", 'Postafo', 'Download Plugin');
+		var navLabel = new Array('Inicio', 'Que hacemos', "Como Trabajamos", 'Portafolio', 'Contacto');
 		
 		
 		$('#main').pageScroller({

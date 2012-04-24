@@ -10,6 +10,20 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
+	if($('.switch').is(':animated')){
+			return false;
+		}
+		if($('.topNav').length){
+			fadeInSide('left', 1);
+		}else{
+			if($('.left-nav .switch').hasClass('off')){
+				fadeInTop('right', 1);
+			}else{
+				fadeInTop('left', 1);
+			}
+		}
+
+
 	$('.left-nav .switch, .right-nav .switch').click(function(e){
 		if($('.switch li').is(':animated')){
 			return false;
@@ -301,15 +315,14 @@ function fadeInTop(direction, top){
 	var nav = $('.pageScroll');
 	var navis = $('li', nav);
 	nav.fadeOut(200, function(){
-		nav.removeAttr('class').wrap('<div class="topNav white"></div>');
+		nav.removeAttr('class').wrap('<div class="topNav"></div>');
 		for(i=0;i<navis.length;i++){
 			var naviClass = 'topNavLink topNavLink_'+(i+1);
 			navis.eq(i).attr('class', naviClass)
 		}
-		$('#main').animate({ marginTop: '100px'}, 200);
+		$('#main').animate({ marginTop: '65px'}, 200);
 		pageScroller.goTo(1);
-		if(!$('.colors', nav).length){
-			nav.append('<li class="colors white"><span class="label">COLOR</span><span class="white active">white</span><span class="dark">dark</span></li>');
+		if(!$('.colors', nav).length){			
 			var myColor = $('.colors');
 			var mySpans = $('span', myColor);
 			var topNav = $('.topNav');

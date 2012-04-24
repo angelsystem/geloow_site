@@ -1,13 +1,12 @@
-#container
-	%aside.contact_form{:style=>"left: 72px; position: fixed; top: 150px"}
-		=render "form"
-	#main.content{:style=>"position: relative; margin-top: 100px"}
+#container	
+	#main.content
 		= render "home"
 		.clear
 		= render "what"
+		.clear
+		= render "who_work"
 		.clear
 		= render "portfolio"
 		.clear
 		= render "contact"
 		.clear
-		

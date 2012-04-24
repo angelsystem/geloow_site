@@ -18,9 +18,7 @@
 
 		= yield(:head)
 		= csrf_meta_tag
-	%body
-		%header
-			= render "layouts/header"
+	%body		
 		= yield
 		%footer
 		:javascript
